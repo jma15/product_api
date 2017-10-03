@@ -1,0 +1,35 @@
+Jeffrey Ma
+
+These are the main files for this assignment
+order/views.py				View to hold all the backend code
+order/serializers.py		Hold and serialize all the objects 
+order/models.py				ORM to connect to the sqlite
+order/urls.py				Contains all the endpoint
+additional_question			Answers to extra questions
+
+Endpoints:
+http://localhost:8000/orders/
+http://localhost:8000/order/<order_id>
+http://localhost:8000/customers/
+
+http://localhost:8000/product_sold/
+	[GET, POST]
+	Example {"to":"2017/1/31", "from":"2016/1/1", "duration":"day"}
+
+Instructions:
+	We will need python for this. Please install python version Python 2.7.10. I believe this will work with other version.
+		Install python:
+			Linux: apt-get install python2.7
+			Mac: https://www.python.org/downloads/
+	
+		Install pip:
+			Mac: sudo easy_install pip
+
+	We will also need django.
+		pip install django
+		pip install djangorestframework
+
+Compile:
+	To start the django on localhost (must in the folder with manage.py):
+		python manage.py runserver
+
